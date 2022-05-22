@@ -9,8 +9,6 @@ export default function Photo() {
     >
       <Paper
        component="img"
-       display= "inline-block"
-       style={{display: 'inline-block'}}
        className='center-img'
        elevation={3} 
        src={require('../images/1.jpg')}

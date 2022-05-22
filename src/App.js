@@ -19,14 +19,14 @@ function App() {
         ></BasicTabs>
       </div>
       <div className='center'>
-        <div className='left-middle'></div>
-        <div className='center-middle'>
+        {/* <div className='left-middle'></div> */}
+        {/* <div className='center-middle'> */}
           <BasicRouter
             tabValue={tabValue}
           >
           </BasicRouter>
-        </div>
-        <div className='right-middle'></div>
+        {/* </div> */}
+        {/* <div className='right-middle'></div> */}
       </div>
       <div className='bottom'></div>
     </div>

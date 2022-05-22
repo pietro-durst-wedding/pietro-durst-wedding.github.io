@@ -7,7 +7,7 @@ import Box from '@mui/material/Box';
 export default function BasicTabs(props) {
   return (
     <AppBar position="static" color="default" className='top-tabs-container'>
-      <Box display="flex" justifyContent="center" width="100%" className='top-tabs'>
+      <Box display="flex" justifyContent="center" width="100%" className='top-tabs top'>
         <Tabs
           TabIndicatorProps={{
             style: {
