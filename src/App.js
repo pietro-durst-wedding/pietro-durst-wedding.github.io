@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import * as React from 'react';
 import './App.css';
+import BasicTabs from './components/Tabs'
+import BasicRouter from './components/Router'
 
 function App() {
+  const [tabValue, setTabValue] = React.useState('home');
+
+  const handleTabChange = (event: React.SyntheticEvent, newValue: string) => {
+    setTabValue(newValue);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='top'>
+        <BasicTabs
+          handleTabChange={handleTabChange}
+          tabValue={tabValue}
+        ></BasicTabs>
+      </div>
+      <div className='center'>
+        <div className='left-middle'></div>
+        <div className='center-middle'>
+          <BasicRouter
+            tabValue={tabValue}
+          >
+          </BasicRouter>
+        </div>
+        <div className='right-middle'></div>
+      </div>
+      <div className='bottom'></div>
     </div>
   );
 }
