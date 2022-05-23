@@ -148,3 +148,16 @@ html, body, #root {
   text-align: left;
   padding: 20px;
 }
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: #E3B7A0;
+  height: 25px;
+  color: #894613;
+  text-shadow: #894613;
+  font-weight: 1000;
+}
