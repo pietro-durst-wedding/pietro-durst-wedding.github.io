@@ -27,10 +27,14 @@ export default function BasicTabs(props) {
 
         >
           <Tab className="tabs" value="home" label="Home" />
-          <Tab className="tabs" value="info" label="Wedding Information" />
-          <Tab className="tabs" value="stay" label="Places to Stay" />
-          <Tab className="tabs" value="do" label="Things to Do" />
+          <Tab className="tabs" value="info" label="Info" />
+          <Tab className="tabs" value="stay" label="To Stay" />
+          <Tab className="tabs" value="do" label="To Do" />
           <Tab className="tabs" value="registry" label="Registry" />
+          <Tab className="tabs" value="rsvp" label="RSVP" />
+          <Tab className="tabs" value="qanda" label="Q&A" />
+          <Tab className="tabs" value="lovestory" label="Love Story" />
+          <Tab className="tabs" value="weddingparty" label="Wedding Party" />
         </Tabs>
       </Box>
     
